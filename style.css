@@ -1,0 +1,81 @@
+:root{
+    --color-acento: violet;
+    --color-acento-claro: red;
+    --color-texto: black;
+
+
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;/*para que los elementos esten uno abajo del otro*/
+    height: 100vh;/*usar el 100% de la altura de la pagina (view x height*/
+}
+
+h3, p{
+    margin: 6px 0;
+}
+a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+a:hover:not(#cart){
+    color: var(--color-acento);
+}
+
+button{
+    background-color: var(--color-acento);
+    padding: 5px 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header{
+    box-shadow: 0 3px 5px rgb(107, 107, 107);
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+header nav div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+#cuenta-carrito{
+    background-color: var(--color-acento);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+}
+#logo{
+    height: 40px;
+}
+
+header nav img{
+    height: 25px;
+}
+
+footer{
+    margin-top: auto;
+    box-shadow:  0 -3px 5px rgb(107, 107, 107); /*se pone en negativo para que la sombra de para arriba*/
+    text-align: center;
+
+
+}
+
+.escondido{
+    display: none;
+}
